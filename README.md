@@ -1,6 +1,7 @@
 @startuml
 left to right direction
 actor "Клиент" as client
+rectangle "Платежная система" as ps
 rectangle  Мойка.ру  {
   usecase "Управлять своим профилем" as UC1
   usecase "Управлять списком своих авто" as UC2
@@ -23,6 +24,7 @@ client --> UC7
 client --> UC8
 client --> UC9
 client --> UC10
+UC7 <-- ps
 
 
 @enduml
